@@ -3,23 +3,20 @@
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Button from '@mui/material/Button';
-import CameraIcon from '@mui/icons-material/PhotoCamera';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid';
-import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-import Link from '@mui/material/Link';
 import theme from '@/app/theme';
 import { ThemeProvider } from '@mui/material/styles';
 
-const cards = [1, 2, 3, 4, 5, 6];
+const cards = [{ key: 1, value: "Bingo Fitness" }, { key: 2, value: "Bingo Meal" }, { key: 3, value: "BingoX Network" }, { key: 4, value: "Bingo Fitness" }, { key: 5, value: "Bingo Meal" }, { key: 6, value: "BingoX Network" }];
 
 export default function Album() {
   return (
@@ -31,31 +28,10 @@ export default function Album() {
         </Toolbar>
       </AppBar>
       <main>
-        {/* Hero unit */}
-        <Box
-          sx={{
-            bgcolor: 'background.paper',
-            pt: 8,
-            pb: 0,
-          }}
-        >
-          <Container maxWidth="sm">
-            <Typography
-              component="h1"
-              variant="h2"
-              align="center"
-              color="text.primary"
-              gutterBottom
-            >
-              Album layout
-            </Typography>
-          </Container>
-        </Box>
         <Container sx={{ py: 8 }} maxWidth="md">
-          {/* End hero unit */}
           <Grid container spacing={4}>
             {cards.map((card) => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+              <Grid item key={card.key} xs={12} sm={6} md={4}>
                 <Card
                   sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
                 >
@@ -68,17 +44,16 @@ export default function Album() {
                     image="https://source.unsplash.com/random?wallpapers"
                   />
                   <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      Heading
-                    </Typography>
+                    <Box sx={{ fontWeight: '400', fontSize: 28 }}>
+                      {card.value}
+                    </Box>
                     <Typography>
-                      This is a media card. You can use this section to describe the
-                      content.
+                      Let's do it.
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small">View</Button>
-                    <Button size="small">Edit</Button>
+                    <Button size="medium">View</Button>
+                    <Button size="medium">Edit</Button>
                   </CardActions>
                 </Card>
               </Grid>
