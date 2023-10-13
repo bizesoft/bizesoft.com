@@ -52,8 +52,9 @@ export default function Album() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="medium">View</Button>
-                    <Button size="medium">Edit</Button>
+                    <Button variant="text">Text</Button>
+                    <Button variant="contained">Contained</Button>
+                    <Button variant="outlined">Outlined</Button>
                   </CardActions>
                 </Card>
               </Grid>

@@ -4,13 +4,13 @@ const font = "'Poppins', SemiBold";
 
 let theme = createTheme({
   palette: {
-    primary: { main: '#1d2031' },
-    secondary: { main: '#dc0250' },
-    error: { main: '#6E353A' },
-    warning: { main: '#F5EE9E' },
-    info: { main: '#568BFF' },
-    success: { main: '#00B389' },
-    background: { default: '#FDFFFC' }
+    // primary: { main: '#1d2031' },
+    // secondary: { main: '#dc0250' },
+    // error: { main: '#6E353A' },
+    // warning: { main: '#F5EE9E' },
+    // info: { main: '#568BFF' },
+    // success: { main: '#00B389' },
+    // background: { default: '#FDFFFC' }
   },
   breakpoints: {
     values: { xs: 600, sm: 800, md: 1000, lg: 1200, xl: 1536, }

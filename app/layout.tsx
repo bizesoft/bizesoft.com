@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>
+      <body id="__next" className={poppins.className}>
         <main>{children}</main>
         <Footer />
       </body>
