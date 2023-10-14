@@ -47,6 +47,9 @@ export default function Album() {
                     <Box sx={{ fontWeight: '400', fontSize: 28 }}>
                       {card.value}
                     </Box>
+                    <Box sx={{ fontSize: 16 }}>
+                      Let's do it.
+                    </Box>
                     <Typography>
                       Let's do it.
                     </Typography>
