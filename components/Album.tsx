@@ -16,7 +16,7 @@ import Container from '@mui/material/Container';
 import theme from '@/app/theme';
 import { ThemeProvider } from '@mui/material/styles';
 
-const cards = [{ key: 1, value: "Bingo Fitness" }, { key: 2, value: "Bingo Meal" }, { key: 3, value: "BingoX Network" }, { key: 4, value: "Bingo Fitness" }, { key: 5, value: "Bingo Meal" }, { key: 6, value: "BingoX Network" }];
+const cards = [{ key: 1, value: "Bingo Fitness" }, { key: 2, value: "Bingo Meal" }, { key: 3, value: "BingoX Network" }];
 
 export default function Album() {
   return (
